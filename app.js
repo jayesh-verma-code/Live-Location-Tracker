@@ -47,12 +47,12 @@ io.on("connection", function(socket) {
                     const u1 = userLocations[userIds[i]];
                     const u2 = userLocations[userIds[j]];
                     const distance = getDistance(u1.latitude, u1.longitude, u2.latitude, u2.longitude);
-                    console.log(`Distance between ${userIds[i]} and ${userIds[j]}: ${distance.toFixed(2)} m`);
-                    if (distance < 5) {
-                        console.log(`✅ Users ${userIds[i]} and ${userIds[j]} are within 5 meters!`);
-                    } else {
-                        console.log(`❌ Users ${userIds[i]} and ${userIds[j]} are more than 5 meters apart.`);
-                    }
+                    // console.log(`Distance between ${userIds[i]} and ${userIds[j]}: ${distance.toFixed(2)} m`);
+                    // if (distance < 5) {
+                    //     console.log(`✅ Users ${userIds[i]} and ${userIds[j]} are within 5 meters!`);
+                    // } else {
+                    //     console.log(`❌ Users ${userIds[i]} and ${userIds[j]} are more than 5 meters apart.`);
+                    // }
                 }
             }
         }
